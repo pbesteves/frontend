@@ -45,7 +45,7 @@ export default class Box extends Component {
             const box = this.props.match.params.id
             data.append('file', file)
             
-            api.post(`boxes/${box}`, data)
+            api.post(`boxes/${box}/files`, data)
         })
     }
 
